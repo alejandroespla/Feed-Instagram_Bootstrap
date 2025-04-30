@@ -9,7 +9,7 @@
 
 </head>
 <body>
-    <nav class="navbar bg-body-tertiary px-2"> 
+    <nav class="navbar bg-body-tertiary px-2 py-3"> 
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="24" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
@@ -31,15 +31,30 @@
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                      ...
+                      <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Caption:</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+                      <div>
+                        <a class="btn btn-light border" role="button" aria-disabled="true"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera-fill" viewBox="0 0 16 16">
+                          <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
+                          <path d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1m9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0"/>
+                        </svg></a>
+                        <a class="btn btn-light border" role="button" aria-disabled="true"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                          <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                        </svg></a>
+                        
+                      </div>
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Save changes</button>
+                      <button type="button" class="btn btn-success">Publish</button>
                     </div>
                   </div>
                 </div>
               </div>
+
+      <!-- Dropdown -->
             <div class="dropdown me-2">
                 <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
@@ -47,9 +62,11 @@
                       </svg>
                 </button>
                 <ul class="dropdown-menu dropdown-menu-end">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                  <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
                 </ul>
             </div>
          </div>
@@ -72,55 +89,167 @@
           </li>
         </ul>
       </div>
-        <div class="tab-content" id="pills-tabContent">
-          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
-            <!-- Imagenes -->
-            <div class="container-fluid  text-center">
-              <div class="row  m-2">
-            
-                <div class="col px-1">
-                    <img  height="550" src="https://cdn.outsideonline.com/wp-content/uploads/2023/03/Funny_Dog_H.jpg?crop=16:9&width=960&enable=upscale&quality=100" class="img-fluid" alt="...">
-                </div>
-                <div class="col px-1">
-                    <img  height="550" src="https://cdn.outsideonline.com/wp-content/uploads/2023/03/Funny_Dog_H.jpg?crop=16:9&width=960&enable=upscale&quality=100" class="img-fluid" alt="...">
-                </div>
-                <div class="col px-1" >
-                    <img  height="550" src="https://cdn.outsideonline.com/wp-content/uploads/2023/03/Funny_Dog_H.jpg?crop=16:9&width=960&enable=upscale&quality=100" class="img-fluid" alt="...">
-                </div>
-            
-            </div>
 
-            <div class="row  m-2">
+        <div class="tab-content text-center" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+           
+   <!-- Images -->
+
+            <div class="row mx-5">
+              <div class="col-4 p-1">
+                <img width="100%" height="250" class="object-fit-fill" src="https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/15665/production/_107435678_perro1.jpg.webp"   alt="...">
+              </div>
+              <div class="col-4 p-1">
+                <img width="100%" height="250" class="object-fit-fill" src="https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/10413/production/_100697566_hi045932006.jpg.webp"   alt="...">
+              </div>
+              <div class="col-4 p-1">
+                <img width="100%" height="250" class="object-fit-fill" src="https://s1.significados.com/foto/paisaje-is-cke.jpg?class=article"  alt="...">
+              </div>
+              <div class="col-4 p-1">
+                <img width="100%" height="250" class="object-fit-fill" src="https://pixnio.com/free-images/2017/11/30/2017-11-30-18-26-53-1152x768.jpg"  alt="...">
+              </div>
+              <div class="col-4 p-1">
+                <img width="100%" height="250" class="object-fit-fill" src="https://www.toureiffel.paris/sites/default/files/styles/width_1100px/public/actualite/image_principale/vue_depuisjardins_webbanner_3.jpg?itok=7GCasIBj"  alt="...">
+              </div>
+              <div class="col-4 p-1">
+                <img width="100%" height="250" class="object-fit-fill" src="https://cdn.forbes.com.mx/2023/09/pexels-keira-burton-6146961-e1695067592121-640x360.webp"  alt="...">
+              </div>
+              <div class="col-4 p-1">
+                <img width="100%" height="250" class="object-fit-fill" src="https://pilbox.themuse.com/image.jpg?filter=antialias&h=385&opt=1&pos=top-left&prog=1&q=keep&url=https%3A%2F%2Fcms-assets.themuse.com%2Fmedia%2Flead%2F01212022-1047259374-coding-classes_scanrail.jpg&w=700"  alt="...">
+              </div>
+              <div class="col-4 p-1">
+                <img width="100%" height="250" class="object-fit-cover" src="https://tresubresdobles.com/wp-content/uploads/2021/04/skft-23aff38e10ee3c4e430a1f3450c4a01d.jpeg"  alt="...">
+              </div>
+              <div class="col-4 p-1">
+                <img width="100%" height="250" class="object-fit-fill" src="https://content20.lecturas.com/medio/2024/01/08/100-preguntas-random-para-sorprender-a-tus-amigos_52e87e98_240108112327_1280x720.jpg"  alt="...">
+              </div>
+            </div>
+          </div>     
+          
+        </div>
+
+<!-- Cards -->
+        
+          <div class="tab-pane fade d-flex flex-column align-items-center m-3" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
             
-              <div class="col px-1">
-                  <img  height="550" src="https://cdn.outsideonline.com/wp-content/uploads/2023/03/Funny_Dog_H.jpg?crop=16:9&width=960&enable=upscale&quality=100" class="img-fluid" alt="...">
-              </div>
-              <div class="col px-1">
-                  <img  height="550" src="https://cdn.outsideonline.com/wp-content/uploads/2023/03/Funny_Dog_H.jpg?crop=16:9&width=960&enable=upscale&quality=100" class="img-fluid" alt="...">
-              </div>
-              <div class="col px-1" >
-                  <img  height="550" src="https://cdn.outsideonline.com/wp-content/uploads/2023/03/Funny_Dog_H.jpg?crop=16:9&width=960&enable=upscale&quality=100" class="img-fluid" alt="...">
+            <div class="card mb-5" style="width: 50rem;">
+              <div class=" d-flex justify-content-between p-3">
+                <h5 >My Crazy dog Spark!</h5>
+                <p>08/26</p>
               </div>
           
-          </div>
-
-          <div class="row  m-2">
+              <img src="https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/15665/production/_107435678_perro1.jpg.webp"  alt="...">
+              <div class="card-body">
+                <strong>204 likes</strong>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              
+              </div>
+            </div>
+            <div class="card mb-5" style="width: 50rem;">
+              <div class=" d-flex justify-content-between p-3">
+                <h5 >My Crazy dog Spark!</h5>
+                <p>08/26</p>
+              </div>
+          
+              <img src="https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/10413/production/_100697566_hi045932006.jpg.webp"  alt="...">
+              <div class="card-body">
+                <strong>204 likes</strong>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              
+              </div>
+            </div>
+            <div class="card mb-5" style="width: 50rem;">
+              <div class=" d-flex justify-content-between p-3">
+                <h5 >My Crazy dog Spark!</h5>
+                <p>08/26</p>
+              </div>
+          
+              <img src="https://s1.significados.com/foto/paisaje-is-cke.jpg?class=article"  alt="...">
+              <div class="card-body">
+                <strong>204 likes</strong>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              
+              </div>
+            </div>
+            <div class="card mb-5" style="width: 50rem;">
+              <div class=" d-flex justify-content-between p-3">
+                <h5 >My Crazy dog Spark!</h5>
+                <p>08/26</p>
+              </div>
+          
+              <img src="https://pixnio.com/free-images/2017/11/30/2017-11-30-18-26-53-1152x768.jpg"  alt="...">
+              <div class="card-body">
+                <strong>204 likes</strong>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              
+              </div>
+            </div>
+            <div class="card mb-5" style="width: 50rem;">
+              <div class=" d-flex justify-content-between p-3">
+                <h5 >My Crazy dog Spark!</h5>
+                <p>08/26</p>
+              </div>
+          
+              <img src="https://www.toureiffel.paris/sites/default/files/styles/width_1100px/public/actualite/image_principale/vue_depuisjardins_webbanner_3.jpg?itok=7GCasIBj"  alt="...">
+              <div class="card-body">
+                <strong>204 likes</strong>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              
+              </div>
+            </div>
+            <div class="card mb-5" style="width: 50rem;">
+              <div class=" d-flex justify-content-between p-3">
+                <h5 >My Crazy dog Spark!</h5>
+                <p>08/26</p>
+              </div>
+          
+              <img src="https://cdn.forbes.com.mx/2023/09/pexels-keira-burton-6146961-e1695067592121-640x360.webp"  alt="...">
+              <div class="card-body">
+                <strong>204 likes</strong>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              
+              </div>
+            </div>
+            <div class="card mb-5" style="width: 50rem;">
+              <div class=" d-flex justify-content-between p-3">
+                <h5 >My Crazy dog Spark!</h5>
+                <p>08/26</p>
+              </div>
+          
+              <img src="https://pilbox.themuse.com/image.jpg?filter=antialias&h=385&opt=1&pos=top-left&prog=1&q=keep&url=https%3A%2F%2Fcms-assets.themuse.com%2Fmedia%2Flead%2F01212022-1047259374-coding-classes_scanrail.jpg&w=700"  alt="...">
+              <div class="card-body">
+                <strong>204 likes</strong>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              
+              </div>
+            </div>
+            <div class="card mb-5" style="width: 50rem;">
+              <div class=" d-flex justify-content-between p-3">
+                <h5 >My Crazy dog Spark!</h5>
+                <p>08/26</p>
+              </div>
+          
+              <img src="https://tresubresdobles.com/wp-content/uploads/2021/04/skft-23aff38e10ee3c4e430a1f3450c4a01d.jpeg"  alt="...">
+              <div class="card-body">
+                <strong>204 likes</strong>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              
+              </div>
+            </div>
+            <div class="card mb-5" style="width: 50rem;">
+              <div class=" d-flex justify-content-between p-3">
+                <h5 >My Crazy dog Spark!</h5>
+                <p>08/26</p>
+              </div>
+          
+              <img src="https://content20.lecturas.com/medio/2024/01/08/100-preguntas-random-para-sorprender-a-tus-amigos_52e87e98_240108112327_1280x720.jpg"  alt="...">
+              <div class="card-body">
+                <strong>204 likes</strong>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              
+              </div>
+            </div>
             
-            <div class="col px-1">
-                <img  height="550" src="https://cdn.outsideonline.com/wp-content/uploads/2023/03/Funny_Dog_H.jpg?crop=16:9&width=960&enable=upscale&quality=100" class="img-fluid" alt="...">
-            </div>
-            <div class="col px-1">
-                <img  height="550" src="https://cdn.outsideonline.com/wp-content/uploads/2023/03/Funny_Dog_H.jpg?crop=16:9&width=960&enable=upscale&quality=100" class="img-fluid" alt="...">
-            </div>
-            <div class="col px-1" >
-                <img  height="550" src="https://cdn.outsideonline.com/wp-content/uploads/2023/03/Funny_Dog_H.jpg?crop=16:9&width=960&enable=upscale&quality=100" class="img-fluid" alt="...">
-            </div>
-        
-        </div>
-
-          </div>
-          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">...</div>
-        </div>
   
       
       
